@@ -1,6 +1,6 @@
 # Basic Python Web Server Dockerized and Hosted on EC2
 
-This repository contains a basic Python web server that says "hello world", Dockerized for easy deployment, and hosted on an Amazon EC2 instance.
+This repository contains a basic Python web server that says "hello world", Dockerized for easy deployment, and hosted on an Ubuntu EC2 instance.
 
 ## Instructions
 
@@ -44,8 +44,8 @@ This repository contains a basic Python web server that says "hello world", Dock
 3. Install Docker on the EC2 instance:
 
     ```bash
-    sudo apt update -y
-    sudo yum install docker -y
+    sudo apt update 
+    sudo apt install docker
     sudo service docker start
     sudo usermod -a -G docker ubuntu
     ```
